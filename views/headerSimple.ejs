@@ -1,0 +1,37 @@
+<div id="contenedorFondoNegro" class="contenedorFondoNegro"> </div>
+<div class="menu container"> <!--menu principal-->
+    <a href="#" class="logo"> Cinepolis</a>
+    <input type="checkbox" id="menu" />
+   <!-- <label class="label" for="menu">
+        <img src="/images/menu.png" class="menu-icono" alt="menu">
+    </label> -->
+    <nav class="navbar">
+        <ul>
+            <li><a href='/principal?perfil=<%- perfil %>&usuario=<%- usuario %>'> Inicio</a></li>
+            <li><a href="/catalogo"> Peliculas</a></li>
+            <li><a href="/lista"> Lista</a></li>
+        </ul>
+    </nav>
+
+    <i id="icono-ventana-pequena" class="icono-ventana-pequena">
+        <img class="img-menu-ventana" src="\images\menu.png">
+        </i> 
+         <div  class="ventana-pequena">
+                 <ul class="menu-ventana-pequena">
+             
+                     <li>
+                         <i class="fas fa-home" aria-hidden="true"></i>
+                         <a href="/principal?perfil=<%- perfil %>&usuario=<%- usuario %>"> Inicio</a>
+                     </li>
+                     <li>
+                         <i class="fas fa-film" aria-hidden="true"></i>
+                         <a href="/catalogo"> Catalogo</a>
+                     </li>
+                     <li>
+                         <i class="fas fa-list" aria-hidden="true"></i>
+                         <a href="/lista"> Lista</a>
+                     </li>
+                 </ul>
+         </div>
+
+</div>

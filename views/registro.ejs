@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Conpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="/stylesheets/carrusel.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container"> <!--menu principal-->
+            <a href="" class="logo"> <!--<img src="/images/logoCinepolis.png">--> Cinepolis</a>
+
+            <input type="checkbox" id="menu" />
+            <label class="label" for="menu">
+                <img src="/images/menu.png" class="menu-icono" alt="menu">
+            </label>
+
+        </div>
+
+        <div id="registro">
+            <h2> Registro </h2>
+            <form action="/registro" method="post">
+                <label class="camposRegistro" for="usernameRegistro"> Nombre de usuario: </label>
+                <input type="text" id="usernameRegistro" name="usernameRegistro"
+                    placeholder="Escribe tu nombre de usuario..." required>
+
+                <label class="camposRegistro" for="emailRegistro"> Email: </label>
+                <input type="text" id="emailRegistro" name="emailRegistro" placeholder="Escribe tu email..." required>
+
+                <label class="camposRegistro" for="password"> Contraseña: </label>
+
+                <div class="contrasena">
+
+                    <input type="password" for="passwordRegisto" id="passwordRegistro" name="passwordRegistro"
+                        placeholder="Escribe tu contraseña..." required></input>
+
+                    <button class="toggleContrasena" onclick="toggleMostrarContrasena()">
+                        <i class="fas fa-eye-slash"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="contenedorRegistro">
+                    <a id="enlaceCuentaExistente" class="enlaceRegistro" href="/">¿Ya tienes cuenta? Inicia Sesión</a>
+                </div>
+                <input class="botonLogIn" type="submit" value="Registrar">
+            </form>
+            <%- errores %>
+        </div>
+
+
+    </header>
+
+    <div class="carrusel">
+        <div class="imagen-carrusel">
+            <img src="https://image.tmdb.org/t/p/original/uUiIGztTrfDhPdAFJpr6m4UBMAd.jpg" alt="">
+            <img src="https://image.tmdb.org/t/p/original/ehumsuIBbgAe1hg343oszCLrAfI.jpg" alt="">
+            <img src="https://image.tmdb.org/t/p/original/yl2GfeCaPoxChcGyM5p7vYp1CKS.jpg" alt="">
+            <img src="https://image.tmdb.org/t/p/original/pA4sNvcohTNPx3AhEEeIu8gSt7h.jpg" alt="">
+        </div>
+    </div>
+
+
+    <script src="/javascripts/login.js"></script>
+    <script src="/javascripts/carrusel.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,473 @@
+.header{
+    top: 3vh;
+}
+
+.fa-eye-slash::after {
+    top: 80%;
+}
+
+.fa-eye-slash::before {
+    top: 30%;
+}
+
+.errorLogIn {
+    color: rgb(183, 47, 47);
+}
+
+#div-sobresaliente {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(187, 187, 187, 0.8);
+    color: rgb(21, 91, 132);
+    border: 2px solid rgb(21, 91, 132);
+    font-size: 3vh;
+    border-radius: 10px;
+    z-index: 9999;
+   /* display: none;*/
+    /* margin-bottom: 10px;*/
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+input[type="text"],
+input[type="text"],
+input[type="text"],
+input[type="password"] {
+    color: rgb(21, 91, 132);
+    margin: 0;
+    font-size: 2vh;
+    width: 80%;
+    margin-bottom: 0.8vh;
+}
+
+
+input[type="password"] {
+    margin-bottom: 3vh;
+    width: 80%;
+}
+
+
+input[type="submit"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+::placeholder {
+    color: rgb(21, 91, 132);
+    font-size: 2vh;
+}
+
+h2 {
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+label {
+    color: rgb(21, 91, 132);
+    font-size: 4vh;
+    display: block;
+}
+
+.contenedorCuenta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2vh;
+}
+
+.preguntaCuenta,
+.preguntaContrasena {
+    width: 45%;
+    text-align: center;
+    line-height: 5vh;
+    color: rgb(21, 91, 132);
+    font-size: 2vh;
+}
+
+.contenedorRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaceRegistro {
+    text-align: center;
+    line-height: 3vh;
+    color: rgb(21, 91, 132);
+    font-size: 2vh;
+    margin-bottom: 2vh;
+}
+
+.botonLogIn {
+    padding: 0.7vh 3vh;
+    background-color: rgb(21, 91, 132);
+    color: #FFFFFF;
+    border: none;
+    font-size: 2.5vh;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    display: block;
+}
+
+
+#registro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(21, 91, 132);
+    border: 2px solid rgb(21, 91, 132);
+    border-radius: 10px;
+    z-index: 9999;
+   /* display: none;*/
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+
+}
+
+.camposRegistro {
+    font-size: 3vh;
+}
+
+.contrasena {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+
+.contrasenaLogin {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+
+
+}
+
+.toggleContrasena {
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    /*width: 9vh; 
+    height: auto; 
+    padding: 0; */
+}
+
+.toggleContrasenaLogin {
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    /*width: 9vh; 
+    height: auto; 
+    padding: 0; */
+}
+
+.toggleContrasena i {
+    color: rgb(21, 91, 132);
+    font-size: 1.5em;
+}
+
+.toggleContrasenaLogin i {
+    color: rgb(21, 91, 132);
+    font-size: 1.5em;
+}
+
+#passwordRegistro {
+    padding-right: px;
+    width: 100%;
+}
+
+#password {
+    padding-right: 30px;
+    width: 100%;
+}
+
+
+
+/*--------- Cambiar Contraseña ----------------------*/
+#cambiarContrasena {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(21, 91, 132);
+    border: 2px solid rgb(21, 91, 132);
+    border-radius: 10px;
+    z-index: 9999;
+   /* display: none;*/
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+
+
+}
+
+.contrasenaNueva {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+
+.contrasenaNueva1 {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+
+.toggleContrasenaOlvidada {
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.toggleContrasenaOlvidada1 {
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.toggleContrasenaOlvidada i {
+    color: rgb(21, 91, 132);
+    font-size: 1.5em;
+}
+
+.toggleContrasenaOlvidada1 i {
+    color: rgb(21, 91, 132);
+    font-size: 1.5em;
+}
+
+#nuevaContrasena {
+    padding-right: px;
+    width: 100%;
+}
+
+#nuevaContrasena1 {
+    padding-right: 30px;
+    width: 100%;
+}
+
+.botonContrasenaOlvidada {
+    padding: 0.7vh 3vw;
+    background-color: rgb(21, 91, 132);
+    color: #FFFFFF;
+    border: none;
+    font-size: 3vh;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    display: block;
+}
+
+.contrasenaOlvidada {
+    font-size: 4vh;
+}
+
+
+.mensaje-exito {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px; /* Espacio interior alrededor del texto */
+    text-align: center; /* Texto centrado */
+    position: fixed; /* Posición fija en la parte superior */
+    top: 2vh; /* En la parte superior de la ventana */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrado horizontal */
+    width: 200px; /* Ancho del mensaje */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1000; /* Índice de apilamiento alto para asegurarse de que esté encima de otros elementos */
+}
+
+@media (max-width:991px) {
+    #div-sobresaliente {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        width: 50%;
+        /* height: 50vh;*/
+        height: auto;
+        top: 40%;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        color: rgb(21, 91, 132);
+        font-size: 3vw;
+        width: 80%;
+        margin-bottom: 0.8vh;
+    }
+
+    input[type="password"] {
+        margin-bottom: 3vh;
+    }
+
+    input[type="submit"] {
+        display: block;
+        /*margin-left: 43%;*/
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+
+    ::placeholder {
+        color: rgb(21, 91, 132);
+        font-size: 1.5vh;
+    }
+
+    label {
+        color: rgb(21, 91, 132);
+        font-size: 3vw;
+        display: block;
+        margin-bottom: 0;
+
+    }
+
+    .contenedorCuenta {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1vh;
+    }
+
+    .preguntaCuenta,
+    .preguntaContrasena {
+        width: 45%;
+        text-align: center;
+        line-height: 5vh;
+        color: rgb(21, 91, 132);
+        font-size: 1.5vw;
+    }
+
+    .contenedorRegistro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enlaceRegistro {
+        text-align: center;
+        line-height: 5vh;
+        color: rgb(21, 91, 132);
+        font-size: 2vw;
+    }
+
+    .botonLogIn {
+        /* padding: 7px 20px;*/
+        padding: 0.7vh 3vw;
+        background-color: rgb(21, 91, 132);
+        color: #FFFFFF;
+        border: none;
+        font-size: 3vh;
+        font-family: 'Bebas Neue', sans-serif;
+        cursor: pointer;
+        display: block;
+    }
+
+    #registro {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vw;
+        width: 50%;
+        /* height: 50vh;*/
+        height: auto;
+        top: 40%;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .contrasena {
+        position: relative;
+        display: inline-block;
+    }
+
+    .contrasenaLogin {
+        position: relative;
+        display: inline-block;
+    }
+
+    .toggleContrasena {
+        position: absolute;
+        right: 5px;
+        top: 40%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .toggleContrasenaLogin {
+        position: absolute;
+        right: 5px;
+        top: 40%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .toggleContrasena i {
+        color: rgb(21, 91, 132);
+        font-size: 1.5em;
+    }
+
+    .toggleContrasenaLogin i {
+        color: rgb(21, 91, 132);
+        font-size: 1.5em;
+    }
+
+    #passwordRegistro {
+        padding-right: 30px;
+        width: 100%;
+    }
+
+    #password {
+        padding-right: 30px;
+        width: 100%;
+    }
+}

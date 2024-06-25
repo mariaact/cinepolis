@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    /*font-weight: 400;
+    font-style: normal;*/
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 150vh;
+    margin: 0 auto;
+}
+
+.header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    /*justify-content: space-between;*/
+}
+
+.contenedorFondoNegro {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    z-index: 9999;
+}
+
+.logo {
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.navbar {
+    margin-left: 10vh;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(21, 91, 132);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    display: none;
+    width: 45px;
+    background-color: white;
+    border-radius: 5vh;
+}
+
+.menu .label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+.header-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.header-1 img {
+    width: 300px;
+}
+
+.header-2 {
+    width: 50%;
+    margin-top: 80px;
+    text-align: end;
+}
+
+.header-2 h1 {
+    color: #FFFFFF72;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.header-2 img {
+    width: 70px;
+}
+
+.header {
+    padding-top: 15vh;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: rgb(21, 91, 132);
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.btn-2 {
+    width: 110px;
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: rgb(21, 91, 132);
+    font-size: 20px;
+    margin-top: 30px;
+    color: #FFFFFF72;
+}
+
+.btn-User {
+    position: fixed;
+    top: 2vh;
+    right: 3vh;
+    z-index: 9999;
+}
+
+/*
+.navbarUsuario {
+    display: none;
+    position: fixed;
+    top: 9vh;
+    right: 2vh;
+    padding: 20px;
+    height: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+.navbarUsuario li {
+    margin-bottom: 3vh;
+}
+
+.navbarUsuario i {
+    margin-right: 2vh;
+}
+
+.navbarUsuario li a {
+    color: white;
+    font-size: 2vh;
+}
+.imagenUser {
+    width: 40px;
+    height: 40px;
+}
+*/
+
+.menu container {
+    position: fixed;
+    top: 2vh;
+}
+
+
+
+.movies {
+    padding: 10vh 0 0 10vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 5vh;
+}
+
+a {
+    float: right;
+}
+
+hr {
+    border: 1px solid rgb(21, 91, 132);
+    width: 70%;
+    margin-bottom: 40px;
+    margin: 0 auto;
+
+}
+
+.box-container-1,
+.box-container-2,
+.box-container-3,
+.box-container-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vh, 1fr));
+    gap: 1vh;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+    max-width: 25vh;
+    /*margin: 0 auto;*/
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4),
+.box-1:nth-child(5) {
+    display: inline-block;
+}
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4),
+.box-2:nth-child(5) {
+    display: inline-block;
+}
+
+.box-3:nth-child(1),
+.box-3:nth-child(2),
+.box-3:nth-child(3),
+.box-3:nth-child(4),
+.box-3:nth-child(5) {
+    display: inline-block;
+}
+
+.box-4:nth-child(1),
+.box-4:nth-child(2),
+.box-4:nth-child(3),
+.box-4:nth-child(4),
+.box-4:nth-child(5) {
+    display: inline-block;
+}
+
+
+.content img {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 43vh;
+}
+
+.content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 13vh;
+    font-size: 3.5vh;
+    padding-top: 1vh;
+}
+
+.content {
+    color: #FFFFFF;
+    font-size: 2.5vh;
+    width: 30vh;
+}
+
+.fas {
+    color: white;
+}
+
+.filter-button {
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2vh;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 2vh;
+    right: 10vh;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-button i {
+    margin-right: 5px;
+    /* Ajusta el espacio entre el ícono y el texto */
+}
+
+.filter-button:hover {
+    background-color: #90b3d8;
+    /* Cambia el color de fondo al pasar el ratón */
+}
+
+.divPantallaFiltro {
+    position: fixed;
+    top: 30vh;
+    left: 90%;
+    width: 50vh;
+    height: 70%;
+    background-color: black;
+    align-items: center;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 100px 0;*/
+    margin-top: 10vh;
+    border-top: 1ox solid rgb(21, 91, 132);
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer h3 {
+    font-size: 30px;
+}
+
+.footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-right: 20px;
+    display: block;
+}
+
+.footer a:hover {
+    color: rgb(21, 91, 132);
+}
+
+#cargarPeliculas {
+    position: absolute;
+    left: 50%;
+    /* Esto moverá el elemento al 50% del ancho del contenedor */
+    transform: translateX(-50%);
+    /* Esto centrará el elemento horizontalmente */
+    top: 50%;
+    /* Esto moverá el elemento al 50% de la altura del contenedor */
+    padding: 10px;
+
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+}
+
+/*Filtro*/
+#botonFiltrar,
+#botonFiltrarCancelar {
+    display: inline-block;
+}
+
+.mensajeListaVacia {
+    text-align: center;
+    padding-top: 30vh;
+}
+
+.divListaVacia {
+    width: 208vh;
+    height: 53vh;
+}
+
+#icono-ventana-pequena {
+    display: none;
+}
+
+.ventana-pequena {
+    display: none;
+}
+
+
+
+
+
+@media (max-width:991px) {
+    .filter-button {
+        display: none;
+    }
+
+    #icono-ventana-pequena {
+        display: block;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu .label {
+        display: block;
+        top: 1vh;
+        position: absolute;
+        left: 80%;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 180px 30px 30px 30px;
+    }
+
+    .header-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .movies {
+        padding: 30px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    #cargarPeliculas {
+        position: relative;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        top: 2vh;
+        left: 8vh;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor {
+        position: relative;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .box-container-1,
+    .box-container-2,
+    .box-container-3,
+    .box-container-4 {
+        padding-left: 8vh;
+    }
+
+    .menu-icono {
+        top: 1.1vh;
+        position: absolute;
+        left: 80%;
+        display: block;
+        height: 5vh;
+        background-color: white;
+        border-radius: 20vh;
+        width: 5vh;
+    }
+
+    .ventana-pequena {
+
+        position: fixed;
+        top: 10vh;
+        right: 10vh;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+        left: 78%;
+        z-index: 9999;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+    }
+
+    .menu-ventana-pequena li {
+        display: flex;
+        align-items: center;
+        padding: 1vh;
+    }
+
+
+    .menu-ventana-pequena li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        text-align: left;
+        margin-left: 2vh;
+    }
+
+    .menu-ventana-pequena li a:hover {
+        color: rgb(21, 91, 132);
+    }
+
+    .menu-ventana-pequena li button:hover {
+        color: rgb(21, 91, 132);
+    }
+
+    .navbarUser li a:hover {
+        color: rgb(21, 91, 132);
+    }
+
+    .icono-ventana-pequena {
+        display: block;
+        top: 2vh;
+        position: absolute;
+        left: 80%;
+    }
+
+    .icono-ventana-pequena img {
+        display: block;
+        height: 5vh;
+        background-color: white;
+        border-radius: 20vh;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-ventana-pequena li a i {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .botonFiltrarPantallaPequena {
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        border: transparent;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.7vh;
+        margin-right: auto;
+    }
+
+    .menu-ventana-pequena li button {
+
+        margin-left: 2vh;
+    }
+
+
+}

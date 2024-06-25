@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Conpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="/stylesheets/peliculasDetalles.css">
+    <link rel="stylesheet" href="/stylesheets/valoraciones.css">
+    <link rel="stylesheet" href="/stylesheets/botonUsuario.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+</head>
+
+<body>
+
+    <header class="header" style="background:linear-gradient(rgba(255, 255, 225, 0), rgba(0, 0, 0, 1)), url('<%= imageUrl %>') center center no-repeat; background-size: cover;">
+        <div class="menu container"> 
+            <a href="#" class="logo"> Cinepolis</a>
+            <input type="checkbox" id="menu" />
+            <label class="label" for="menu">
+                <img src="/images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/principal?perfil=<%- perfil %>&usuario=<%- user %>"> Inicio</a></li>
+                    <li><a href="/catalogo"> Peliculas</a></li>
+                    <li><a href="/lista"> Lista</a></li>
+                </ul>
+            </nav>
+
+           
+        </div>
+        <%- include('botonUsuario') %>
+
+        <div class="cuerpo">
+            <div class="titulo">
+                <h2> <%- titulo %> </h2>
+                <hr>
+            </div>
+            <div class="infoPelicula">
+                <div class="fechaPelicula">
+                    <p><strong> <%- fechaLanzamiento %> </strong></p>
+                </div>
+                <div class="duracionPelicula">
+                    <p><strong> <%- duracion %> Min </strong></p>
+                </div>
+               
+                <div class="megustaPelicula">
+                    <button class="heart-btn" onclick="toggleHeart(this, '<%- pelicula %>', '<%- user %>', '<%- perfil %>')">
+                        <svg class="heart-icon <%= comprobarPeliculaLista ? 'active' : '' %>" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <% if (perfil != 'Kids'){ %>
+                    <div class="valoracion" >
+                        <i class="fas fa-thumbs-up" id="manoArriba" style="width: 50px;height: 50px;"></i>
+                    </div>
+        
+                <% } %>
+                       
+
+                
+            </div>
+
+            <div class="contenedor">
+                <div class="div1">
+                    <p><%- review %></p>
+                </div>
+                <div class="div2">
+                    Reparto: <%- reparto %>...
+                    <br>
+                    <br>
+                    Género: <%- generos %>.
+                    <br>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="contenedorResenas">
+        <div class="contenedorResenas1">
+            <h1>Valoración Pelicula</h1>
+            <div class="rating-container">
+                <div class="rating-item hidden" id="smile"><a href="/guardarValoraciones?valoracion=buena&titulo=<%- pelicula %>" class="far fa-smile"></a></div>
+                <div class="rating-item hidden" id="meh"><a href="/guardarValoraciones?valoracion=regular&titulo=<%- pelicula %>" class="far fa-meh"></a></div>
+                <div class="rating-item hidden" id="frown"><a href="/guardarValoraciones?valoracion=mala&titulo=<%- pelicula %>" class="far fa-frown"></a></div>
+            </div>
+            <p>¡Haz clic!</p>
+            <a class="enlaceResena" href="/valoraciones?titulo=<%- pelicula %>">Escribir reseña</a>
+        </div>
+    </div>
+
+    <section class="movies container">
+
+        <h2> Similares </h2>
+        <hr>
+        <div class="box-container-1">
+            <%- html %>
+        </div>
+        <%- cargarMas %>
+
+        <%- include('footer') %>
+
+        <script src="/javascripts/nav.js"></script>
+        <script src="/javascripts/corazonLista.js"></script>
+        <script src="/javascripts/divValoraciones.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+.buscador {
+  /*  position: absolute;
+    left: 100vh;
+    top: 1vh;
+    height: 5vh;
+    /*transform: translate(-50%, -50%);
+    padding: 5px; */
+  width: 30vh;
+  position: fixed;
+  top: 2vh;
+  right: 25vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  outline: none;
+  box-sizing: border-box;
+  height: 30px;
+  /*width: 0;*/
+  padding: 0 10px;
+  color: white;
+  border-radius: 25px;
+  font-size: 14px;
+  border: 2px solid rgb(21, 91, 132);
+  /*transition: all .7s ease;*/
+  background-color: transparent;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: white;
+}
+
+.botonBuscar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(21, 91, 132);
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  /* transition: .5s;*/
+}
+
+.botonBuscar i {
+  font-size: 14px;
+  color: white;
+  /* transition: all .7s ease;*/
+}
+
+/*.buscador:hover input {
+    width: 175px; 
+  }*/
+
+/* .buscador:hover i {
+    transform: rotate(-360deg);
+  }*/
+
+.botonBuscar:hover {
+  background-color: rgb(21, 91, 132);
+}
+
+
+/*USUARIO*/
+#btn-User {
+  position: fixed;
+  top: 3vh;
+  right: 5vh;
+
+}
+
+.search-input-box {
+  width: 90%;
+  background-color: #2f3640;
+  border-radius: 5px;
+  position: relative;
+  color: #f5f6f4;
+  box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.12);
+  /* top: 2vh;*/
+}
+
+.search-input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 4vh;
+  padding: 0 60px 0 20px;
+  font-size: 2vh;
+}
+
+.icon {
+  position: absolute;
+  top: 0.7vh;
+  right: 1.5vh;
+  font-size: 2.5vh;
+  cursor: pointer;
+  color: #0d141f;
+}
+
+.container-suggestions {
+  max-height: 280px;
+  opacity: 0;
+  pointer-events: none;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.search-input-box.active .container-suggestions {
+  opacity: 1;
+  pointer-events: auto;
+  padding: 10px 8px;
+}
+
+.search-input-box.active .container-suggestions li {
+  display: block;
+}
+
+.container-suggestions li {
+  list-style: none;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: none;
+}
+
+/*
+  .container-suggestions li:hover{
+      background-color: #414b57;
+  }
+  .fa-solid, .fas {
+    font-weight: 900;
+    top: 1vh;
+  }
+*/
+@media (max-width:991px) {
+  .buscador {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+  }
+
+}

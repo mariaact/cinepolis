@@ -1,0 +1,58 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Conpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="/stylesheets/peliculas.css">
+    <link rel="stylesheet" href="/stylesheets/buscadorPeliculas.css">
+    <link rel="stylesheet" href="/stylesheets/botonUsuario.css">
+    <link rel="stylesheet" href="/stylesheets/chatValoraciones.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        
+        <%- include('headerSimple') %>
+    
+        <%- include('botonUsuario') %>
+    
+    </header>
+    <!--<ul id="messages"></ul> -->
+    <div class="divExterior">
+        <div id="allCrit" class="load-comments" data-post="1234163857" data-page="1">
+            <%- html %>
+                <!--  <div class="itemCrit" data-id="1403">
+            <div class="headCri canReply" style="padding: 1.3vh 1.3vh 1.3vh 1.3vh;">
+                <div class="uAvatar">
+                    <img src="https://secure.gravatar.com/avatar/?s=96&amp;d=mm&amp;r=g">
+                </div>
+                <a href="javascript:void(0)">ismael</a>
+                <p class="dateContainer">09-05-2024 / 22:56</p>
+            </div>
+            <div class="cuerCri canReply">ok</div>
+        </div>
+        <div class="itemCrit" data-id="1403">
+            <div class="headCri canReply" style="padding: 1.3vh 1.3vh 1.3vh 1.3vh;">
+                <div class="uAvatar">
+                    <img src="https://secure.gravatar.com/avatar/?s=96&amp;d=mm&amp;r=g">
+                </div>
+                <a href="javascript:void(0)">ismael</a>
+                <p class="dateContainer">09-05-2024 / 22:56</p>
+            </div>
+            <div class="cuerCri canReply">ok</div>
+        </div> -->
+        </div>
+    </div>
+    <form id="form" action="/valoraciones?titulo=<%- pelicula %>" method="post">
+        <input id="textoValoracion" name="textoValoracion" placeholder="Escribe tu valoración..." type="text" required>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>

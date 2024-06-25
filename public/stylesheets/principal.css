@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    /*font-weight: 400;
+    font-style: normal;*/
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-header {
+    width: 120vh;
+    height: auto;
+}
+
+.div-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, black, transparent 30%),
+        linear-gradient(to right, black, transparent 30%),
+        linear-gradient(to top, black, transparent 30%),
+        linear-gradient(to bottom, black, transparent 30%);
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
+.div-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow: hidden;
+    top: 7vh;
+}
+
+.contenedor-botones {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    top: 40vh;
+    z-index: 1;
+
+}
+
+.contenedor-botones button {
+    padding: 10px;
+    background-color: white;
+    border: 0.3vh solid rgb(21, 91, 132);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(21, 91, 132);
+}
+
+.contenedor-botonVerPelicula {
+    position: absolute;
+    top: 58vh;
+    left: 50vh;
+    z-index: 1;
+}
+
+/*
+.boton-VerPelicula {
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+*/
+.boton-VerPelicula {
+    background-color: rgb(21, 91, 132, 0.2);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.boton-VerPelicula:hover {
+    background: #fff;
+    color: #000;
+}
+
+#infoPeli {
+    padding-right: 1.5vh;
+}
+
+#tituloPeliculaCarrusel {
+    position: absolute;
+    top: 50vh;
+    left: 48vh;
+    z-index: 1;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    /*justify-content: space-between;*/
+}
+
+.contenedorFondoNegro {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    z-index: 9999;
+}
+
+.logo {
+    font-size: 3.5vh;
+    color: #FFFFFF;
+    top: 4vh;
+    position: absolute;
+}
+
+.navbar {
+    margin-left: 10vh;
+    width: 45%;
+    top: 2vh;
+    position: absolute;
+    left: 15%;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(21, 91, 132);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 45px;
+}
+
+.menu .label {
+    background-color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+.header-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.header-1 img {
+    width: 300px;
+}
+
+.header-content {
+    display: none;
+}
+
+.header-2 {
+    width: 50%;
+    margin-top: 80px;
+    text-align: end;
+}
+
+.header-2 h1 {
+    color: #FFFFFF72;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.header-2 img {
+    width: 70px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: rgb(21, 91, 132);
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.btn-2 {
+    width: 110px;
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: rgb(21, 91, 132);
+    font-size: 20px;
+    margin-top: 30px;
+    color: #FFFFFF72;
+}
+
+/*
+.btn-User {
+    position: fixed;
+    top: 3vh;
+    right: 3vh;
+    z-index: 9999;
+}
+
+.navbarUsuario {
+    display: none;
+    position: fixed;
+    top: 9vh;
+    right: 2vh;
+    padding: 20px;
+    height: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+}
+
+.navbarUsuario li {
+    margin-bottom: 3vh;
+}
+
+.navbarUsuario i {
+    margin-right: 2vh;
+}
+
+.navbarUsuario li a {
+    color: white;
+    font-size: 2vh;
+}
+.imagenUser {
+    width: 40px;
+    height: 40px;
+}*/
+
+
+.menu container {
+    position: fixed;
+    top: 2vh;
+}
+
+
+
+.movies {
+    /* padding: 10vh 0 0 10vh;*/
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+hr {
+    border: 1px solid rgb(21, 91, 132);
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.box-container-0,
+.box-container-1,
+.box-container-2,
+.box-container-3,
+.box-container-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.box-container-10 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 40px;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+    border-radius: 5px;
+    z-index: 1000;
+    /*display: none;*/
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4) {
+    display: inline-block;
+}
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4) {
+    display: inline-block;
+}
+
+.box-10 .content img {
+    width: 20vh;
+    height: 30vh;
+}
+
+
+.load-more {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid rgb(21, 91, 132);
+    color: rgb(21, 91, 132);
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.load-more:hover {
+    background-color: rgb(21, 91, 132);
+    color: #FFFFFF;
+}
+
+.content img {
+    width: 30vh;
+    height: 43vh;
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.content h3 {
+    font-size: vh;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 10vh;
+    font-size: 3.5vh;
+    padding-top: 1vh;
+}
+
+
+.content {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    margin-top: 100px;
+    border-top: 1ox solid rgb(21, 91, 132);
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer h3 {
+    font-size: 30px;
+}
+
+.footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-right: 20px;
+    display: block;
+}
+
+.footer a:hover {
+    color: rgb(21, 91, 132);
+}
+
+.overview {
+    width: 38vh;
+    height: 100px;
+    overflow-y: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5vh;
+    scrollbar-width: thin;
+}
+
+.imagenPelicula {
+    width: 270px;
+    height: 350px;
+
+}
+
+a {
+    float: right;
+}
+
+.ventana-pequena {
+    display: none;
+}
+
+.icono-ventana-pequena {
+    display: none;
+}
+
+.img-menu-ventana {
+    display: none;
+}
+
+.navbarUser li a:hover {
+    color: rgb(21, 91, 132);
+}
+
+
+@media (max-width:991px) {
+   
+    .menu {
+        padding: 20px;
+    }
+
+    .menu .label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 180px 30px 30px 30px;
+    }
+
+    .header-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .movies {
+        padding: 30px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .buscador {
+        position: absolute;
+        left: 50%;
+        top: 4vh;
+        transform: translate(-50%, -50%);
+        padding: 5px;
+    }
+
+    .ventana-pequena {
+
+        position: fixed;
+        top: 12vh;
+        right: 10vh;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25vh;
+        height: auto;
+        border-radius: 5px;
+        left: 78%;
+        z-index: 9999;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 0, 0, 0.4);
+        display: none;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+
+    .menu-ventana-pequena li  {
+        padding-bottom: 1vh;
+    }
+    
+
+    .menu-ventana-pequena li a {
+        text-decoration: none;
+        color: white; 
+        display: block;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        text-align: left; 
+    }
+    
+    .menu-ventana-pequena li a:hover {
+        color: rgb(21, 91, 132);
+    }
+
+    .navbarUser li a:hover {
+        color: rgb(21, 91, 132);
+    }
+
+    .icono-ventana-pequena {
+        display: block;
+        top: 2.5vh;
+        position: absolute;
+        left: 80%;
+    }
+
+    .icono-ventana-pequena img {
+        display: block;
+        height: 6vh;
+        background-color: white;
+        border-radius: 20vh;
+        width: 6vh;
+    }
+
+    .menu-ventana-pequena li a i {
+        margin-right: 10px; 
+        font-size: 16px; 
+    }
+
+    #tituloPeliculaCarrusel {
+        position: absolute;
+        top: 50vh;
+        left: 8vh;
+        z-index: 1;
+    }
+
+    .contenedor-botonVerPelicula {
+        position: absolute;
+        top: 58vh;
+        left: 10vh;
+        z-index: 1;
+    }
+
+}

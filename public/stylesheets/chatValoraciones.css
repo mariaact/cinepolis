@@ -1,0 +1,265 @@
+* {
+    background-color: black;
+}
+
+form {
+    background: lightgray;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 4vh;
+
+}
+
+#textoValoracion {
+    flex-grow: 1;
+    width: 10vh;
+    background-color: white;
+    border-color: rgb(12, 39, 55);
+    box-sizing: border-box;
+}
+
+#messages {
+    list-style-type: none;
+    height: 10vh;
+    width: auto;
+    padding: 2vh;
+    margin: 2vh;
+
+}
+
+#messages>li {
+    background: lightblue;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 2vh;
+
+}
+
+button {
+    background-color: rgb(12, 39, 55);
+    height: 4vh;
+    padding: 0.7vh 3vh;
+    background-color: rgb(12, 39, 55);
+    ;
+    color: #FFFFFF;
+    border: none;
+    font-size: 2.5vh;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    display: block;
+}
+
+#allCrit {
+    margin-top: 1.62vh;
+}
+
+#allCrit {
+    float: left;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+}
+
+.itemCrit {
+    margin: 0 0 2vh;
+    overflow: hidden;
+    border-radius: 0.54vh;
+    position: relative;
+    display: block;
+}
+
+elemento {
+    padding: 1.35vh 1.35vh 1.35vh 1.35vh;
+}
+
+.load-comments .canReply {
+    padding-bottom: 2.7vh;
+}
+
+.load-comments .headCri {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.load-comments .cuerCri,
+.load-comments .headCri,
+.load-comments .inbCritOne {
+    float: none;
+}
+
+.itemCrit .headCri {
+    float: left;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    /* background: #202124;*/
+    background: rgb(12, 39, 55);
+    padding: 0.67vh;
+    width: -webkit-fill-available;
+    position: relative;
+}
+
+.itemCrit .headCri .uAvatar {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 0.5vh;
+}
+
+.load-comments .headCri>* {
+    float: none;
+}
+
+.uAvatar {
+    float: left;
+    margin: 0 1.3vh 0 0;
+    position: relative;
+    width: 6vh;
+    height: 6vh;
+    overflow: hidden;
+    background: #1b1b25;
+    border-radius: 15%;
+}
+
+.uAvatar img {
+    height: auto;
+}
+
+.uAvatar img {
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    position: absolute;
+    background: rgb(12, 39, 55);
+}
+
+.itemCrit .headCri a,
+.starContainer {
+    display: inline-flex !important;
+    align-items: center;
+    margin-left: 0.54vh;
+}
+
+.itemCrit .headCri a {
+    display: inline-block;
+    font-size: 2.5vh;
+    font-weight: 500;
+    margin: 0 0 1vh;
+    margin-left: 0vh;
+    color: #e9e9e9;
+    background: rgb(12, 39, 55);
+}
+
+.load-comments .headCri>* {
+    float: none;
+}
+
+a {
+    color: #408bea;
+}
+
+a,
+h2,
+input,
+li,
+span {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.load-comments .headCri .dateContainer {
+    position: static;
+    margin-left: auto;
+}
+
+.itemCrit .headCri p {
+    /*margin: 0;*/
+    margin-left: 0vh;
+    position: absolute;
+    /*top: 10px;
+    right: 10px;*/
+    color: #bbb;
+    font-size: 2vh;
+    background: rgb(12, 39, 55);
+}
+
+.load-comments .headCri>* {
+    float: none;
+}
+
+.load-comments .canReply {
+    padding-bottom: 2.7vh;
+}
+
+.load-comments .cuerCri {
+    margin-top: 0.27vh;
+}
+
+.load-comments .cuerCri,
+.load-comments .headCri,
+.load-comments .inbCritOne {
+    float: none;
+}
+
+.itemCrit .cuerCri {
+    float: left;
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+    margin: 0.54vh 0 0;
+    margin-top: 0.54vh;
+    font-size: 2.3vh;
+    color: black;
+    line-height: 3.4vh;
+    /*background: #020202;*/
+    background-color: #90a8c8;
+    padding: 0.68vh 1.35vh;
+    padding-bottom: 0.68vh;
+    width: -webkit-fill-available;
+    position: relative;
+    font-weight: 300;
+}
+
+.divExterior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.14vh solid black;
+}
+
+#icon1 {
+    background-color: rgb(32, 130, 200);
+}
+
+#icon2 {
+    background-color: rgb(26, 206, 19);
+}
+
+#icon3 {
+    background-color: rgb(237, 139, 27);
+}
+
+.vacio {
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+.header {
+    padding-top: 10vh;
+}
+
+.navbar {
+    margin-left: 30vh;
+}

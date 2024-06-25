@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container5 {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.container2,
+.container3 {
+    display: none;
+}
+
+#box5 {
+    height: 10vh;
+    width: 10vh;
+}
+
+.box {
+    width: 30vh;
+    height: 30vh;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 12px;
+    color: azure;
+}
+
+.iconUser {
+    width: 30vh;
+    height: 30vh;
+    align-items: center;
+}
+
+.iconUserKids {
+    width: 25vh;
+    height: 25vh;
+}
+
+.iconUserAdd {
+    width: 15vh;
+    height: 15vh;
+}
+
+#box1 {
+    background-color: rgb(32, 130, 200);
+}
+
+#box2 {
+    background-color: rgb(26, 206, 19);
+}
+
+#box3 {
+    background-color: rgb(237, 139, 27);
+}
+
+#box4 {
+    background: linear-gradient(45deg, rgb(237, 27, 79), #ffc7c7);
+}
+
+h1 {
+    margin-top: 20px;
+    color: white;
+}
+
+.title-container {
+    color: white;
+    position: absolute;
+    top: 4vh;
+    font-size: 5vh;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: transparent;
+}

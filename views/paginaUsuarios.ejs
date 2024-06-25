@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="/stylesheets/paginaUsuarios.css">
+
+</head>
+
+<body>
+    <div class="title-container">
+        <h1>¿Quién está viendo?</h1>
+    </div>
+    <div class="main-container">
+        <div class="container1">
+            <div class="box" id="box1">
+                <button onclick="window.location.href='/principal?perfil=' + encodeURIComponent('<%- nombrePerfiles[0] %>')">
+                <img class="iconUser" src="/images/userIcon.png"></button></div>
+            <p class="name"><%- user %></p>
+        </div>
+
+        <% if (numeroPerfiles == 3 || numeroPerfiles == 4) { %>
+            <div class="container2" style="display: block;">
+                <div class="box" id="box2">
+                    <button onclick="window.location.href='/principal?perfil=' + encodeURIComponent('<%- nombrePerfiles[2] %>')"><img class="iconUser" src="/images/userIcon.png"></button>
+                </div>
+                <p class="name" id="pBox2"><%- nombrePerfiles[2] %></p>
+            </div>
+            <% } else { %>
+                <div class="container2" style="display: none;">
+                    <div class="box" id="box2">
+                        <button><img class="iconUser" src="/images/userIcon.png"></button>
+                    </div>
+                    <p class="name" id="pBox2"></p>
+                </div>
+                <% } %>
+
+
+        <% if (numeroPerfiles == 4) { %>
+            <div class="container3" style="display: block;">
+                <div class="box" id="box3">
+                    <button onclick="window.location.href='/principal?perfil=' + encodeURIComponent('<%- nombrePerfiles[3] %>')"><img class="iconUser" src="/images/userIcon.png"></button>
+                </div>
+                <p class="name" id="pBox3"><%- nombrePerfiles[3] %></p>
+            </div>
+        <% } else { %>
+            <div class="container3" style="display: none;">
+                <div class="box" id="box3">
+                    <button><img class="iconUser" src="/images/userIcon.png"></button>
+                </div>
+                <p class="name" id="pBox3"></p>
+            </div>
+        <% } %>
+
+
+                                <!--
+        <div class="container2">
+            <div class="box" id="box2"><button><img class="iconUser" src="/images/userIcon.png"></button></div>
+            <p class="name" id="pBox2"></p>
+        </div>
+        <div class="container3">
+            <div class="box" id="box3"><button><img class="iconUser" src="/images/userIcon.png"></button></div>
+            <p class="name" id="pBox3"></p>
+        </div>
+        -->
+        <div class="container4">
+            <div class="box" id="box4">
+                <button onclick="window.location.href='/principal?perfil=' + encodeURIComponent('<%- nombrePerfiles[1] %>')"><img class="iconUserKids" 
+                src="/images/userIconKids.png"></button></div>
+                <p class="name">Kids</p>
+        </div>
+        <% if (numeroPerfiles == 4) { %>
+            <div class="container5" style="display: none;">
+                <div class="box" id="box5"><button onclick="pedirNombre()"><img class="iconUserAdd"
+                    src="/images/iconoAdd.png"></button></div>
+                <p class="name">Nuevo Perfil</p>
+            </div>
+           
+        <% } else { %>
+            <div class="container5">
+                <div class="box" id="box5"><button onclick="pedirNombre()"><img class="iconUserAdd"
+                    src="/images/iconoAdd.png"></button></div>
+                <p class="name">Añadir perfil</p>
+            </div>
+        <% } %>
+
+        
+       
+    </div>
+    <script src="/javascripts/nombrePerfiles.js"></script>
+</body>
+
+</html>

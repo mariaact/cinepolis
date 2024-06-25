@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    /*font-weight: 400;
+    font-style: normal;*/
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu {
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(21, 91, 132);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 45px;
+}
+
+.menu .label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+.header-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.header-1 img {
+    width: 300px;
+}
+
+.header-2 {
+    width: 50%;
+    margin-top: 80px;
+    text-align: end;
+}
+
+.header-2 h1 {
+    color: #FFFFFF72;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.header-2 img {
+    width: 70px;
+}
+
+
+/*------------------ Carrusel ---------------------------*/
+
+.carrusel {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;
+}
+
+.imagen-carrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .imagen-carrusel img {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+
+/*.imagen-carrusel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.imagen-carrusel img {
+    height: 90vh;
+    object-fit: contain;
+
+}
+
+.imagen-carrusel {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: scroll scroll-snap-type: x mandatory;
+}
+
+.imagen-carrusel img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}*/
+
+.btn-1 {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: rgb(21, 91, 132);
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu .label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 180px 30px 30px 30px;
+    }
+
+    .header-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .movies {
+        padding: 30px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+}

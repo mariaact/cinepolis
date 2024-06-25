@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+   
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+    /* Evitar que el contenido se desborde */
+}
+
+.cuerpo {
+    padding-top: 60vh;
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 22px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(21, 91, 132);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 45px;
+}
+
+.menu .label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+.header-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.header-1 img {
+    width: 300px;
+}
+
+.header-2 {
+    width: 50%;
+    margin-top: 80px;
+    text-align: end;
+}
+
+.header-2 h1 {
+    color: #FFFFFF72;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.header-2 img {
+    width: 70px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: rgb(21, 91, 132);
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.btn-2 {
+    width: 110px;
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: rgb(21, 91, 132);
+    font-size: 20px;
+    margin-top: 30px;
+    color: #FFFFFF72;
+}
+
+.movies {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid rgb(21, 91, 132);
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.box-container-1,
+.box-container-2,
+.box-container-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4) {
+    display: inline-block;
+}
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4) {
+    display: inline-block;
+}
+
+.load-more {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 1px solid rgb(21, 91, 132);
+    color: rgb(21, 91, 132);
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.load-more:hover {
+    background-color: rgb(21, 91, 132);
+    color: #FFFFFF;
+}
+
+.content img {
+    width: 30vh;
+    height: 43vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.content h3 {
+    font-size: 20px;
+    text-align: center;
+    height: 10vh;
+    font-size: 3.5vh;
+    padding-top: 1vh;
+}
+
+.content img {
+    width: 30vh;
+    height: 43vh;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    float: right;
+}
+
+.content {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+    margin-top: 100px;
+    border-top: 1ox solid rgb(21, 91, 132);
+    width: 100%;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer h3 {
+    font-size: 30px;
+}
+
+.footer a {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-right: 20px;
+    display: block;
+}
+
+.footer a:hover {
+    color: rgb(21, 91, 132);
+}
+
+.contenedor {
+    display: flex;
+    margin: 0 auto;
+}
+
+.div1 {
+    flex: 60%;
+    height: auto;
+    padding: 30px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    padding-top: 10px;
+
+}
+
+.div2 {
+    flex: 40%;
+    height: auto;
+    padding: 30px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    padding-top: 10px;
+
+}
+
+.titulo {
+    padding: 30px;
+    padding-bottom: 0px;
+
+}
+
+.infoPelicula {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.fechaPelicula,
+.duracionPelicula,
+.megustaPelicula,
+.valoracion {
+    font-size: 2.5vh;
+    flex: 1;
+    text-align: center;
+}
+
+
+.heart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .heart-icon {
+    width: 24px;
+    height: 24px;
+    fill: wheat; /* Color del corazón inicial */
+  }
+  
+  .heart-icon.active {
+    fill: red; /* Color del corazón al ser activado */
+  }
+
+.valoracion {
+    padding: 0;
+    margin: 0;
+}
+
+.fas {
+    padding: 0;
+    margin: 0;
+    font-size: 2vh;
+}
+
+
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu .label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 180px 30px 30px 30px;
+    }
+
+    .header-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .movies {
+        padding: 30px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+}

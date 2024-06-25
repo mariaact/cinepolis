@@ -1,0 +1,43 @@
+
+<% if (posicionPerfil == 0) { %>
+    <i class="btn-User" style="background-color: rgb(32, 130, 200); border-radius: 50%;">
+        <img class="imagenUser" src="/images/userIcon.png">
+    </i>
+<% } %>
+<% if (posicionPerfil == 1) { %>
+    <i class="btn-User" style="background: linear-gradient(45deg, rgb(237, 27, 79), #ffc7c7); border-radius: 50%;">
+        <img class="imagenUser" src="/images/userIconKids.png">
+    </i>
+<% } %>
+<% if (posicionPerfil == 2) { %>
+    <i class="btn-User" style="background-color: rgb(26, 206, 19); border-radius: 50%;">
+        <img class="imagenUser" src="/images/userIcon.png">
+    </i>
+<% } %>
+<% if (posicionPerfil == 3) { %>
+    <i class="btn-User" style="background-color: rgb(237, 139, 27); border-radius: 50%;">
+        <img class="imagenUser" src="/images/userIcon.png">
+    </i>
+<% } %>
+
+
+<div id="navbarUsuario" class="navbarUsuario">
+    <div class="navbarUser">
+        <ul>
+            <li>
+                <i class="fas fa-user"></i>
+                <a href="/paginaUsuarios"> Cambiar Perfil</a>
+            </li>
+            <% if (perfil != 'Kids') { %>
+                <li>
+                    <i class="fas fa-cog"></i>
+                    <a href="/configuracion"> Configuración</a>
+                </li>
+            <% } %>
+            <li>
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="/"> Cerrar Sesión</a>
+            </li>
+        </ul>
+    </div>
+</div>
